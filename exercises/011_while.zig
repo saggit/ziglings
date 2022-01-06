@@ -19,14 +19,17 @@ const std = @import("std");
 
 pub fn main() void {
     var n: u32 = 2;
-
+    var condition = true;
     // Please use a condition that is true UNTIL "n" reaches 1024:
-    while (???) {
+    while (condition) {
         // Print the current number
         std.debug.print("{} ", .{n});
 
         // Set n to n multiplied by 2
         n *= 2;
+        if (n == 1024) {
+           condition = false;
+        }
     }
 
     // Once the above is correct, this will print "n=1024"
