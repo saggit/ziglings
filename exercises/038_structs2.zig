@@ -40,6 +40,12 @@ pub fn main() void {
     //     health     100
     //     experience 20
     //
+    chars[1] = Character{
+         .class = Class.bard,
+         .gold = 10,
+         .health = 100,
+         .experience = 20,
+     };
     // Feel free to run this program without adding Zump. What does
     // it do and why?
 
